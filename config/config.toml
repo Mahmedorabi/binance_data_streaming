@@ -1,0 +1,6 @@
+[binance]   
+
+symbol   = "BTCUSDC"
+interval = "1m"
+limit    = 1   
+url     = "https://api.binance.com/api/v3/klines"
