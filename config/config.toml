@@ -3,4 +3,4 @@
 symbol   = "BTCUSDC"
 interval = "1m"
 limit    = 1   
-url     = "https://api.binance.com/api/v3/klines"
+stream_url = "wss://stream.binance.com:9443/ws/{symbol}@kline_{interval}"
