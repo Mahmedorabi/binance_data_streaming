@@ -26,7 +26,7 @@ A real-time cryptocurrency data streaming application that connects to [Binance 
 - [Contributing](#-contributing)
 
 ## 📁 Project Structure
-
+```
 BINANCE_DATA_STREAMING/
 ├── app/
 │   ├── __init__.py            # Python package marker
@@ -47,7 +47,7 @@ BINANCE_DATA_STREAMING/
 ├── poetry.lock              # Poetry lock file
 ├── pyproject.toml          # Poetry project file
 └── README.md               # This file
-
+```
 ## 🔧 Prerequisites
 
 - [Python 3.11+](https://www.python.org/downloads/)
