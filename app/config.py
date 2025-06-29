@@ -1,4 +1,4 @@
-import os 
+import os
 import tomllib
 from pathlib import Path
 from dotenv import load_dotenv
@@ -19,10 +19,12 @@ DATABASE_PORT = os.getenv("DATABASE_PORT")
 config_path = BASE_DIR / "config" / "config.toml"
 
 with open(config_path, "rb") as f:
-    cfg = tomllib.load(f)['binance']
+    cfg = tomllib.load(f)["binance"]
 
 # Configurations
-BINANCE_SYMBOL = cfg['symbol']
-BINANCE_INTERVAL = cfg['interval']
-BINANCE_LIMIT = cfg['limit']
-BINANCE_URL = cfg['url']
+BINANCE_SYMBOL = cfg["symbol"]
+BINANCE_INTERVAL = cfg["interval"]
+BINANCE_LIMIT = cfg["limit"]
+BINANCE_URL = cfg["stream_url"].format(
+    symbol=BINANCE_SYMBOL.lower(), interval=BINANCE_INTERVAL
+)
