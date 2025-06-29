@@ -27,9 +27,9 @@ A real-time cryptocurrency data streaming application that connects to [Binance 
 
 ## 📁 Project Structure
 
-```
 BINANCE_DATA_STREAMING/
 ├── app/
+│   ├── __init__.py            # Python package marker
 │   ├── __pycache__/
 │   ├── binance_client.py      # WebSocket streaming client
 │   ├── config.py              # Configuration management
@@ -37,17 +37,16 @@ BINANCE_DATA_STREAMING/
 │   ├── database.py            # PostgreSQL database operations
 │   └── logger_print.py        # Logging configuration
 ├── config/
+│   ├── __init__.py            # Python package marker
 │   └── config.toml            # Application configuration
 ├── test/                      # Test files
 ├── notebook.ipynb            # Jupyter notebook for analysis
-├── .env                      # Environment variables (not tracked)
 ├── .env.example              # Environment variables template
 ├── .gitignore               # Git ignore file
 ├── main.py                  # Application entry point
 ├── poetry.lock              # Poetry lock file
 ├── pyproject.toml          # Poetry project file
 └── README.md               # This file
-```
 
 ## 🔧 Prerequisites
 
