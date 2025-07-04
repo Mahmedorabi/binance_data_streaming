@@ -1,8 +1,8 @@
 import asyncpg
 from dotenv import load_dotenv
 import uuid
-from app import config
-from app.data_validation import DataValidation
+from src import config
+from src.data_validation import DataValidation
 
 load_dotenv()
 

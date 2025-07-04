@@ -1,4 +1,4 @@
-from app.binance_client import stream_data
+from src.binance_client import stream_data
 import asyncio
 
 if __name__ == "__main__":

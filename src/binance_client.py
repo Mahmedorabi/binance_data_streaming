@@ -1,9 +1,9 @@
 import json
-from app import config
+from src import config
 import websockets
-from app.database import insert_candle
-from app.data_validation import DataValidation
-from app.logger_print import get_logger
+from src.database import insert_candle
+from src.data_validation import DataValidation
+from src.logger_print import get_logger
 
 logger = get_logger(__name__)
 symbol = config.BINANCE_SYMBOL.lower()

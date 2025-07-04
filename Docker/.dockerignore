@@ -1,0 +1,16 @@
+.env
+# Python artefacts
+__pycache__/
+*.py[cod]
+*.log
+.mypy_cache/
+
+# Local tooling / venvs
+.venv/
+.env
+
+# VCS
+.git/
+
+# Tests
+test/
