@@ -23,11 +23,12 @@ services:
       - ../.env
     volumes:
       - ../:/app
-    ports:
-      - "80:8000"
     working_dir: /app
     command: ["python", "main.py"]
+    ports:
+      - "80:8000"
     restart: always
+
 
 volumes:
   pgdata:
